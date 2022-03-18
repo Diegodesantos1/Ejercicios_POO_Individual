@@ -1,5 +1,5 @@
 from Clases import Catastrofe
-from Clases.Catastrofe import Catastrofe_activada
+from Clases.Catastrofe import *
 
 
 def eleccion_ejercicio():
