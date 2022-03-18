@@ -9,7 +9,10 @@ class Catastrofe:
 class Catastrofe_activada(Catastrofe):
     A=Catastrofe("Nueva York","YooHoo!","Martin")
     B=Catastrofe("Nueva York","YooHoo!","Salim")
-    C=Catastrofe("Los Ángeles","YooHoo!","Xing\n")
+    C=Catastrofe("Los Ángeles","YooHoo!","Xing")
+    print(A.ocurrir_catastrofe())
+    print(B.ocurrir_catastrofe())
+    print(C.ocurrir_catastrofe())
     eleccion=int(input("¿Qué ciudad desea destruir?\n --> 1: Nueva York\n --> 2: Los Ángeles\n"))
     if eleccion == 1:
         print("¡Oh no, está cayendo un meteorito en Nueva York!\n")
