@@ -8,13 +8,13 @@ class Dia_siguiente(Catastrofe):
     def activar():
         A=Catastrofe("Nueva York","YooHoo!","Martin") ; B=Catastrofe("Nueva York","YooHoo!","Salim") ; C=Catastrofe("Los Ángeles","YooHoo!","Xing")
         print(A.ocurrir_catastrofe()) ; print(B.ocurrir_catastrofe()) ; print(C.ocurrir_catastrofe())
-        eleccion=int(input("¿Qué ciudad desea destruir?\n --> 1: Nueva York\n --> 2: Los Ángeles\n"))
+        eleccion=int(input("\n¿Qué ciudad desea destruir?\n --> 1: Nueva York\n --> 2: Los Ángeles\n"))
         if eleccion == 1:
             print("¡Oh no, está cayendo un meteorito en Nueva York!\n")
             final1 = A.ocurrir_catastrofe().replace ("Nueva York","Destruida") ; final2 = B.ocurrir_catastrofe().replace ("Nueva York","Destruida") ; final3 = C.ocurrir_catastrofe()
-            print(f" {final1}\n {final2}\n {final3}")
+            print(f" {final1}\n {final2}\n {final3}\n")
         elif eleccion == 2:
             print("¡Oh no, está cayendo un meteorito en Los Ángeles!\n")
             final1 = A.ocurrir_catastrofe() ; final2 = B.ocurrir_catastrofe() ; final3 = C.ocurrir_catastrofe().replace ("Los Ángeles","Destruida")
-            print (f" {final1}\n {final2}\n {final3}")
+            print (f" {final1}\n {final2}\n {final3}\n")
 
