@@ -1,11 +1,10 @@
-from Clases import Catastrofe
-from Clases.Catastrofe import *
+from Clases.Catastrofe import Dia_siguiente
 
 
 def eleccion_ejercicio():
     variable = int(input("Seleccione que ejercicio desea ejecutar: \n -->1: Catástrofe\n -->2: \n -->3: \n -->4: \n"))
     if variable == 1:
-        from Clases import ejercicio1
+        Dia_siguiente.activar()
     elif variable == 2:
         from Clases import ejercicio2
     elif variable == 3:
