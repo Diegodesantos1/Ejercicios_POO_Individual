@@ -1,14 +1,14 @@
 casa = {}
 orientaciones = ['NORTE', 'SUR', 'ESTE', 'OESTE']
 
-class Casa():
+class Interfaz_Cristal():
     global casa
     def Paredes(self, orientacion):
         for i in range(len(orientacion)):
             nombre = orientacion[i]
             casa[nombre] = {'ventanas': {},}
         print(casa)
-        Casa().Ventanas([['NORTE', 0.5, ''], ['SUR', 1, ''], ['ESTE', 2, ''], ['OESTE', 1, '']])
+        Interfaz_Cristal().Ventanas([['NORTE', 0.5, ''], ['SUR', 1, ''], ['ESTE', 2, ''], ['OESTE', 1, '']])
     def Ventanas(self, ventanas):
         dimensiones = []
         for i in range(len(ventanas)):
@@ -16,7 +16,7 @@ class Casa():
             casa[nombre]['ventanas'] = {'superficie': ventanas[i][1],'proteccion': ventanas[i][2]}
         dimensiones.append(ventanas[i][1])
         print(casa)
-        Casa().Superficie()
+        Interfaz_Cristal().Superficie()
     def Superficie(self):
         total = 0
         for i in range(len(orientaciones)):
@@ -30,13 +30,13 @@ class Casa():
             print('Protección en regla.')
         else:
             print('Protección obligatoria no presente.')
+
+Interfaz_Cristal().Paredes(['NORTE', 'SUR', 'ESTE', 'OESTE'])
 print("\n")
-Casa().Paredes(['NORTE', 'SUR', 'ESTE', 'OESTE'])
+Interfaz_Cristal().Paredes(['NORTE', 'SUR', 'ESTE', 'OESTE'])
 print("\n")
-Casa().Paredes(['NORTE', 'SUR', 'ESTE', 'OESTE'])
+Interfaz_Cristal().ParedCortina('NORTE', 4)
 print("\n")
-Casa().ParedCortina('NORTE', 4)
+Interfaz_Cristal().Superficie()
 print("\n")
-Casa().Superficie()
-print("\n")
-Casa().ComprobarProteccion('NORTE')
+Interfaz_Cristal().ComprobarProteccion('NORTE')
