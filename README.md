@@ -16,7 +16,7 @@ En este [repositorio](https://github.com/Diegodesantos1/Ejercicios_POO_Individua
 
 ## Ejercicio 1: Catástrofe <a name="id1"></a>
 
-Enunciado:modelar lo siguiente. Una empresa es propietaria de varios edificios y emplea a varios empleados. Un edificio está necesariamente ubicado en una ciudad y una ciudad está formada por varios edificios. Empresa, empleado, ciudad y edificio tienen cada uno un nombre. Estas ciudades incluyen New York, donde se encuentran los edificios A y B, y Los Ángeles, donde está el edificio C. Estos tres edificios son propiedad de YooHoo! que emplea a los Sres. Martin, Salim y la Sra. Xing.
+Enunciado: modelar lo siguiente. Una empresa es propietaria de varios edificios y emplea a varios empleados. Un edificio está necesariamente ubicado en una ciudad y una ciudad está formada por varios edificios. Empresa, empleado, ciudad y edificio tienen cada uno un nombre. Estas ciudades incluyen New York, donde se encuentran los edificios A y B, y Los Ángeles, donde está el edificio C. Estos tres edificios son propiedad de YooHoo! que emplea a los Sres. Martin, Salim y la Sra. Xing.
 
 Una vez definidas estas entidades, imagine que su programa es una película estadounidense de catástrofes, en la que se destruye New York. Implemente este evento para que todas las entidades del juego tengan en cuenta las consecuencias de este cataclismo.
 
@@ -42,11 +42,15 @@ class Dia_siguiente(Catastrofe):
             final1 = A.ocurrir_catastrofe() ; final2 = B.ocurrir_catastrofe() ; final3 = C.ocurrir_catastrofe().replace ("Los Ángeles","Destruida")
             print (f" {final1}\n {final2}\n {final3}\n")
 ```
+
 Su UML es el siguiente:
 
+![image](https://user-images.githubusercontent.com/91721855/159304406-c755e7a3-4c03-4ee1-b611-6ec88cdff7b0.png)
+
+En formato [xml](https://github.com/Diegodesantos1/Ejercicios_POO_Individual/blob/main/UML/Catastrofe.drawio)
 
 
-## Ejercicio 2: ¿INmortal? <a name="id2"></a>
+## Ejercicio 2: ¿Inmortal? <a name="id2"></a>
 
 Enunciado: Teniendo en cuenta el siguiente código, explique por qué el mensaje Yang destruido, se muestra después del signo de interrogación. ¿Qué hay que hacer para que aparezca antes?
 
@@ -66,4 +70,27 @@ class Inmortal:
         print(yang is yin.yang)
         Yang._del_(yang)
         print("?")
-        print("\nExplicación: se printeaba antes ? ya que del(yang) no era accesible,\nya que es un atributo privado debido a las (__) __del__\nal nombrarlo correctamente ahora sí, se ejecuta antes\n")```
+        print("\nExplicación: se printeaba antes ? ya que del(yang) no era accesible,\nya que es un atributo privado debido a las (__) __del__\nal nombrarlo correctamente ahora sí, se ejecuta antes\n")
+```
+
+Su UML es el siguiente:
+
+![image](https://user-images.githubusercontent.com/91721855/159304695-8cddf74a-58c3-4c78-91f7-5bca97f3f4bc.png)
+
+En formato [xml](https://github.com/Diegodesantos1/Ejercicios_POO_Individual/blob/main/UML/Inmortal.drawio)
+
+## Ejercicio 3: Alternativa a la Herencia múltiple <a name="id3"></a>
+
+Enunciado: comenzando con el mismo código que el ejercicio sobre herencia múltiple, cree una clase que agrupe el comportamiento común entre las clases Ventana y ParedCortina.
+
+Enunciado: modifique las clases Ventana y ParedCortina para que usen esta nueva clase-interfaz Cristal.
+
+Enunciado: modifique el código para que el programa funcione de nuevo.
+
+```python
+Poner código
+```
+Su UML es el siguiente:
+
+
+En formato [xml]()
