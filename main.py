@@ -10,8 +10,6 @@ def eleccion_ejercicio():
         Inmortal.ejecutar_ejercicio()
     elif variable == 3:
         from Clases import ejercicio3
-    elif variable == 4:
-        from Clases import ejercicio4
     else:
         eleccion_ejercicio()
 
