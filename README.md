@@ -10,7 +10,7 @@ En este [repositorio](https://github.com/Diegodesantos1/Ejercicios_POO_Individua
 ## Índice
 1. [Ejercicio 1: Catástrofe ](#id1)
 2. [Ejercicio 2: Inmortal](#id2)
-3. [Ejercicio 3: Herencia múltiple - Diamante](#id3)
+3. [Ejercicio 3: Alternativa a la Herencia múltiple](#id3)
 
 ***
 
@@ -47,3 +47,23 @@ Su UML es el siguiente:
 
 
 ## Ejercicio 2: ¿INmortal? <a name="id2"></a>
+
+Enunciado: Teniendo en cuenta el siguiente código, explique por qué el mensaje Yang destruido, se muestra después del signo de interrogación. ¿Qué hay que hacer para que aparezca antes?
+
+```python
+class Inmortal:
+    def ejecutar_ejercicio():
+        class Yin: pass
+        class Yang:
+            def _del_(self):
+                print("Yang destruido")
+
+        yin = Yin()
+        yang = Yang()
+        yin.yang = yang
+
+        print(yang)
+        print(yang is yin.yang)
+        Yang._del_(yang)
+        print("?")
+        print("\nExplicación: se printeaba antes ? ya que del(yang) no era accesible,\nya que es un atributo privado debido a las (__) __del__\nal nombrarlo correctamente ahora sí, se ejecuta antes\n")```
