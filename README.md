@@ -47,7 +47,7 @@ Su UML es el siguiente:
 
 ![image](https://user-images.githubusercontent.com/91721855/159304406-c755e7a3-4c03-4ee1-b611-6ec88cdff7b0.png)
 
-En formato [xml](https://github.com/Diegodesantos1/Ejercicios_POO_Individual/blob/main/UML/Catastrofe.drawio)
+En formato [XML](https://github.com/Diegodesantos1/Ejercicios_POO_Individual/blob/main/UML/Catastrofe.drawio)
 
 
 ## Ejercicio 2: ¿Inmortal? <a name="id2"></a>
@@ -77,7 +77,7 @@ Su UML es el siguiente:
 
 ![image](https://user-images.githubusercontent.com/91721855/159304695-8cddf74a-58c3-4c78-91f7-5bca97f3f4bc.png)
 
-En formato [xml](https://github.com/Diegodesantos1/Ejercicios_POO_Individual/blob/main/UML/Inmortal.drawio)
+En formato [XML](https://github.com/Diegodesantos1/Ejercicios_POO_Individual/blob/main/UML/Inmortal.drawio)
 
 ## Ejercicio 3: Alternativa a la Herencia múltiple <a name="id3"></a>
 
@@ -91,7 +91,7 @@ Su UML es el siguiente:
 
 ![image](https://user-images.githubusercontent.com/91721855/159433629-6f070b4e-6240-45c2-92c7-a48e85a1b6ef.png)
 
-En formato [xml](https://github.com/Diegodesantos1/Ejercicios_POO_Individual/blob/main/UML/Herencia_Ejercicio3.drawio)
+En formato [XML](https://github.com/Diegodesantos1/Ejercicios_POO_Individual/blob/main/UML/Herencia_Ejercicio3.drawio)
 
 ```python
 casa = {}
