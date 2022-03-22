@@ -87,11 +87,53 @@ Enunciado: modifique las clases Ventana y ParedCortina para que usen esta nueva 
 
 Enunciado: modifique el código para que el programa funcione de nuevo.
 
-```python
-Poner código
-```
 Su UML es el siguiente:
 
 ![image](https://user-images.githubusercontent.com/91721855/159433629-6f070b4e-6240-45c2-92c7-a48e85a1b6ef.png)
 
-En formato [xml]()
+En formato [xml](https://github.com/Diegodesantos1/Ejercicios_POO_Individual/blob/main/UML/Herencia_Ejercicio3.drawio)
+
+```python
+casa = {}
+orientaciones = ['NORTE', 'SUR', 'ESTE', 'OESTE']
+
+class Interfaz_Cristal():
+    global casa
+    def Paredes(self, orientacion):
+        for i in range(len(orientacion)):
+            nombre = orientacion[i]
+            casa[nombre] = {'ventanas': {},}
+        print(casa)
+        Interfaz_Cristal().Ventanas([['NORTE', 0.5, ''], ['SUR', 1, ''], ['ESTE', 2, ''], ['OESTE', 1, '']])
+    def Ventanas(self, ventanas):
+        dimensiones = []
+        for i in range(len(ventanas)):
+            nombre = ventanas[i][0]
+            casa[nombre]['ventanas'] = {'superficie': ventanas[i][1],'proteccion': ventanas[i][2]}
+        dimensiones.append(ventanas[i][1])
+        print(casa)
+        Interfaz_Cristal().Superficie()
+    def Superficie(self):
+        total = 0
+        for i in range(len(orientaciones)):
+            total += casa[orientaciones[i]]['ventanas']['superficie']
+        print('Superficie acristalada: ' + str(total))
+    def ParedCortina(self, orientacion, tamaño):
+        casa[orientacion]['ventanas']['superficie'] += tamaño
+        print(casa)
+    def ComprobarProteccion(self, orientacion):
+        if casa[orientacion]['ventanas']['proteccion'] != '':
+            print('Protección en regla.')
+        else:
+            print('Protección obligatoria no presente.')
+
+Interfaz_Cristal().Paredes(['NORTE', 'SUR', 'ESTE', 'OESTE'])
+print("\n")
+Interfaz_Cristal().Paredes(['NORTE', 'SUR', 'ESTE', 'OESTE'])
+print("\n")
+Interfaz_Cristal().ParedCortina('NORTE', 4)
+print("\n")
+Interfaz_Cristal().Superficie()
+print("\n")
+Interfaz_Cristal().ComprobarProteccion('NORTE')
+```
