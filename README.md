@@ -4,7 +4,7 @@
 
 ---
 
-En este [repositorio](https://github.com/Diegodesantos1/Ejercicios_POO_Individual) quedan resueltos los ejercicios de POO en Python. Para llevar a cabo el proyecto nos hemos documentado a través de la teoría que se encuentra en el campus virtual y de otros medios.
+En este [repositorio](https://github.com/Diegodesantos1/Ejercicios_POO_Individual) quedan resueltos los ejercicios de POO en Python. Para llevar a cabo el proyecto me he documentado a través de la teoría que se encuentra en el campus virtual y de otros medios.
 
 ***
 ## Índice
