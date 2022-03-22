@@ -92,5 +92,6 @@ Poner código
 ```
 Su UML es el siguiente:
 
+![image](https://user-images.githubusercontent.com/91721855/159433629-6f070b4e-6240-45c2-92c7-a48e85a1b6ef.png)
 
 En formato [xml]()
