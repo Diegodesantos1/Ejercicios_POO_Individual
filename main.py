@@ -1,9 +1,10 @@
 from Clases.Catastrofe import Dia_siguiente
 from Clases.Inmortal import Inmortal
 from Clases.alternativa import *
+from colorama import Fore
 
 def eleccion_ejercicio():
-    variable = int(input("Seleccione que ejercicio desea ejecutar: \n -->1: Catástrofe\n -->2: Inmortal \n -->3: Alternativa \n"))
+    variable = int(input(Fore.GREEN +"Seleccione que ejercicio desea ejecutar: \n -->1: Catástrofe\n -->2: Inmortal \n -->3: Alternativa \n" + Fore.WHITE))
     if variable == 1:
         Dia_siguiente.activar()
     elif variable == 2:
